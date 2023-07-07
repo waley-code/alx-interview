@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """0-lockboxes.py interview challenge"""
 
+
 def canUnlockAll(boxes):
     """
     - boxes is a list of lists
@@ -12,18 +13,20 @@ def canUnlockAll(boxes):
     canUnlockAll = False
     keys = {0: True}
     n_boxes = len(boxes)
-    while(True):
+
+    while (True):
 
         n_keys = len(keys)
 
         for i in range(len(boxes)):
+
             if boxes[i] and keys.get(i, False):
                 for j in boxes[i]:
                     if j < n_boxes:
                         keys[j] = True
                     boxes[i] = None
 
-        if not(len(keys) > n_keys):
+        if not (len(keys) > n_keys):
             break
 
     if n_keys == len(boxes):
