@@ -1,17 +1,32 @@
 #!/usr/bin/python3
 """0-lockboxes.py interview challenge"""
 
+def canUnlockAll(boxes):
+    """
+    - boxes is a list of lists
+    - A key with the same number as a box opens that box
+    - You can assume all keys will be positive integers
+    - The first box boxes[0] is unlocked
+    - Return True if all boxes can be opened, else return False
+    """
+    canUnlockAll = False
+    keys = {0: True}
+    n_boxes = len(boxes)
+    while(True):
 
-def canUnlockAll(newList):
-    """lock box function"""
-    pack = [0]
-    for x in range(len(newList)):
-        for y in newList[x]:
-            if not (y == x):
-                pack.append(y)
-        if x not in pack:
-            for z in range(x+1, len(newList)):
-                [pack.append(k) for k in newList[z]]
-            if x not in pack:
-                return False
-    return True
+        n_keys = len(keys)
+
+        for i in range(len(boxes)):
+            if boxes[i] and keys.get(i, False):
+                for j in boxes[i]:
+                    if j < n_boxes:
+                        keys[j] = True
+                    boxes[i] = None
+
+        if not(len(keys) > n_keys):
+            break
+
+    if n_keys == len(boxes):
+        canUnlockAll = True
+
+    return canUnlockAll
