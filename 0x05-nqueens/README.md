@@ -1,0 +1,2 @@
+# N Queens
+## Algorithm   Python
