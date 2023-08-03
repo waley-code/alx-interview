@@ -1,5 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/python3
+"""print all possible solutions to the N Queens problem."""
 import sys
+
 
 def is_safe(board, row, col, N):
     """
@@ -19,6 +21,7 @@ def is_safe(board, row, col, N):
             return False
     return True
 
+
 def solve_nqueens(N, board, row, result):
     """
     Recursive function to find all possible solutions to the N Queens problem.
@@ -37,6 +40,7 @@ def solve_nqueens(N, board, row, result):
                 board[row] = col
                 solve_nqueens(N, board, row + 1, result)
 
+
 def print_nqueens_solutions(N):
     """
     Main function to print all possible solutions to the N Queens problem.
@@ -45,8 +49,9 @@ def print_nqueens_solutions(N):
         N (int): The size of the board.
 
     Prints:
-        list: Prints each possible solution, where each solution is a list of coordinates
-              representing the positions of the queens on the board.
+        list: Prints each possible solution, where each solution is a
+        list of coordinates
+        representing the positions of the queens on the board.
     """
     if not isinstance(N, int):
         print("N must be a number")
@@ -63,6 +68,7 @@ def print_nqueens_solutions(N):
 
     for solution in result:
         print(solution)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
