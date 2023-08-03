@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""print all possible solutions to the N Queens problem."""
+"""print all possible solution to the N Queens problem."""
 import sys
 
 
