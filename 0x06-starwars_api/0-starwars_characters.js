@@ -6,6 +6,7 @@ request(filmUrl, (error, response, body) => {
   if (error) {
     return;
   }
+
   const film = JSON.parse(body);
   const urlToName = {};
   film.characters.forEach((characterUrl) => {
