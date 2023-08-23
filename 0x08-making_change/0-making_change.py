@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """A complete algorithm for the Making Change Project"""
 
+
 def makeChange(coins, total):
     """Determines the fewest number of coins needed to meet a given
     amount total when given a pile of coins of different values.
