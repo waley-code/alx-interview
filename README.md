@@ -1,5 +1,5 @@
 # Interview Tasks Repository
-Welcome to my Interview tasks repository! This repository contains a collection of interview tasks and coding challenges that you can use to prepare for technical interviews. Each task is designed to assess different programming concepts and problem-solving skills commonly tested during interviews.
+Welcome to my interview tasks repository! This repository contains a collection of interview tasks and coding challenges that you can use to prepare for technical interviews. Each task is designed to assess different programming concepts and problem-solving skills commonly tested during interviews.
 
 ## Getting Started
 To get started, follow these steps:
