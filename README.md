@@ -23,6 +23,6 @@ solution: This folder is where you can add your solution code files. Feel free t
 ### Acknowledgements
 Special thanks to alx and contributors who have added tasks and improvements to this repository.
 
-Happy coding and good luck with your interview preparations!
+Happy coding and good luck with interview preparations!
 
 Note: Replace "Adeosun Oyewale" in the repository URL with your actual GitHub username when cloning the repository.
